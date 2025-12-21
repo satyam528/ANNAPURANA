@@ -1,0 +1,222 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(67,160,71,0.08), transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(33,150,243,0.08), transparent 40%),
+        #f5f7fa;
+    padding: 30px;
+}
+
+
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.95;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background: #2e7d32;
+    color: white;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8fcf9 100%
+    );
+    border-radius: 16px;
+    padding: 26px;
+    margin-bottom: 30px;
+    border: 1px solid #e2efe6;
+}
+
+section {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+
+section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+    color: #1b5e20;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section h2::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, #66bb6a, transparent);
+    margin-left: 12px;
+}
+
+
+/* ===== FORMS ===== */
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #2e7d32;
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #dce8df;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    background: #f9fcfa;
+    transition: all 0.2s ease;
+}
+
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #66bb6a;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(102, 187, 106, 0.15);
+}
+
+
+/* ===== BUTTONS ===== */
+button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+/* ===== RISK STATUS TEXT ===== */
+strong {
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: #eeeeee;
+}
+
+/* ===== BACK LINKS ===== */
+a {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* ================= RISK SUMMARY ================= */
+
+.risk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.risk-card {
+    padding: 18px;
+    border-radius: 14px;
+    font-weight: 600;
+    text-align: center;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.risk-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* Risk Levels */
+.risk-card.low {
+    background: #e8f5e9;
+    color: #1b5e20;
+    border-color: #c8e6c9;
+}
+
+.risk-card.medium {
+    background: #fff8e1;
+    color: #f57f17;
+    border-color: #ffe082;
+}
+
+.risk-card.high {
+    background: #ffebee;
+    color: #b71c1c;
+    border-color: #ffcdd2;
+}
