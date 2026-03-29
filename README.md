@@ -1,1 +1,1 @@
-HACKATHON PROJECT(A FArm-Tech Project)
+HACKATHON PROJECT(A Farm-Tech Project)
